@@ -1,0 +1,107 @@
+body {
+    background-color: #e5ffc7;
+}
+
+.title_h {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    color: #386636;
+    display: block;
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+}
+.title_h em {
+    color: #ffa347;
+}
+
+.game {
+    background-image: url('./img/fon.jpg');
+    border-style: outset;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    width: 600px;
+    height: 250px;
+    margin: auto;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url('./img/dino1.png');
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+    right: -10px;
+}
+
+#cactus {
+    width: 40px;
+    height: 40px;
+    background-image: url('./img/cactus.png');
+    background-size: 40px 40px;
+    position: relative;
+    top: 115px;
+    left: 580px;
+    animation: cactuseMov 2s infinite linear;
+}
+
+@keyframes cactuseMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -15px;
+    }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 120px;
+    }
+    50% {
+        top: 70px;
+    }
+    80% {
+        top: 120px;
+    }
+    100% {
+        left: 150px;
+    }
+}
+
+.describtion {
+    margin-top: 40px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.game_describtion {
+    color:  #ffa347;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #386636;
+   text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+   color:  #ffa347;
+   font-weight: bold;
+   font-size: 25px;
+}
